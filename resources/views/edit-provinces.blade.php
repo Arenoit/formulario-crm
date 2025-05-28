@@ -39,7 +39,7 @@
                                 </g>
                             </g>
                         </g>
-                    </svg> Información Personal
+                    </svg> Editar Provincia
                 </h5>
             </div>
             <div class="card-body p-4">

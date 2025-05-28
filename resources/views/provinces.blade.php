@@ -34,7 +34,7 @@
                                 </g>
                             </g>
                         </g>
-                    </svg> Información Personal
+                    </svg> Crear nueva Provincia
                 </h5>
             </div>
             <div class="card-body p-4">
@@ -90,7 +90,7 @@
                                     </g>
                                 </g>
                             </g>
-                        </svg> Información Personal
+                        </svg> Lista de las provincias
                     </h5>
                 </div>
                 <div class="card-header">
