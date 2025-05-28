@@ -58,7 +58,7 @@
                                 <div class="form-group mb-0">
                                     <label class="input-label" for="cedula">Cédula</label>
                                     <input type="number" name="cedula" id="cedula" class="form-control __form-control"
-                                        placeholder="cédula" value="{{ $formuser->cedula }}" required>
+                                        placeholder="cédula" value="{{ $formuser->cedula }}" readonly>
                                 </div>
                             </div>
                             <div class="mb-4">

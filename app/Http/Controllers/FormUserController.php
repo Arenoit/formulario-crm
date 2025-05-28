@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Validation\Rule;
+use App\Mail\RegisterMailable;
+use Illuminate\Support\Facades\Mail;
 
 class FormUserController extends Controller
 {
@@ -68,11 +70,6 @@ class FormUserController extends Controller
         $id = $request->id;
         $validator = Validator::make($request->all(), [
             'nombre' => 'required',
-            'cedula' => [
-                'required',
-                'numeric',
-                Rule::unique('formuser', 'cedula')->ignore($id),
-            ],
             'telefono' => 'required|numeric',
             'sexo' => 'required|in:M,F',
             'fecha_nacimiento' => 'required|date|date_format:Y-m-d',
@@ -87,7 +84,7 @@ class FormUserController extends Controller
         $formUser = FormUser::findOrFail($id);
         $formUser->update([
             'nombre' => $request->nombre,
-            'cedula' => $request->cedula,
+            'cedula' => $formUser->cedula,
             'telefono' => $request->telefono,
             'sexo' => $request->sexo,
             'fecha_nacimiento' => $request->fecha_nacimiento,
