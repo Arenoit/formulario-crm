@@ -48,6 +48,12 @@
                         <li>
                             <a href="{{route('provinces')}}" class=""><span>Registro en las Provincias</span></a>
                         </li>
+                        <li>
+                            <a href="{{route('form-suitecrm')}}" class=""><span>Form SuiteCRM</span></a>
+                        </li>
+                        <li>
+                            <a href="{{route('provi-suitecrm')}}" class=""><span>Provincia SuiteCRM</span></a>
+                        </li>
                     </ul>
                     <div class="nav-toggle d-lg-none ms-auto me-3">
                         <span></span>

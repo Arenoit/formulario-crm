@@ -38,3 +38,9 @@ Route::get('/edit-register/{id}', function ($id) {
 })->name('edit-register');
 Route::put('apply5/{id}', 'FormUserController@edit')->name('edit-user');
 Route::delete('apply6/{id}', 'FormUserController@delete')->name('delete-user');
+Route::get('/form-suitecrm', function () {
+    return view('form-suitecrm');
+})->name('form-suitecrm');
+Route::get('/provi-suitecrm', function () {
+    return view('form-suitecrm2');
+})->name('provi-suitecrm');
