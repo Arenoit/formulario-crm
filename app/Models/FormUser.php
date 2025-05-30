@@ -16,7 +16,6 @@ class FormUser extends Model
         'fecha_nacimiento',
         'direccion',
         'provincia_id',
-        'created_at',
     ];
     public function provincia()
     {
